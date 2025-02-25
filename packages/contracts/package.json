@@ -34,6 +34,6 @@
     "test": "forge test",
     "test:coverage": "forge coverage",
     "test:coverage:report": "forge coverage --report lcov && genhtml lcov.info --branch-coverage --output-dir coverage",
-    "deploy:local": "forge script script/Deploy.s.sol --broadcast --fork-url http://localhost:8545 --private-key 0xac0974bec39a17e36ba4a6b4d98f34f5b3dfcfb96b2c"
+    "deploy:local": "forge script script/Deploy.s.sol --broadcast --fork-url http://localhost:8545"
   }
 }
