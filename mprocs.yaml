@@ -1,0 +1,13 @@
+procs:
+  client:
+    cwd: packages/web
+    shell: pnpm run dev
+  anvil:
+    cwd: packages/contracts
+    shell: anvil --base-fee 0 --block-time 2
+  deploy:
+    cwd: packages/contracts
+    # Wait for anvil to be ready before deploying
+    shell: >
+      sleep 3 && 
+      forge script script/Deploy.s.sol --broadcast --fork-url http://localhost:8545 --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cdb9d98f34f5b3dfcfb96b2c

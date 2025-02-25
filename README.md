@@ -18,7 +18,7 @@ cd contracts
 bun install
 ```
 
-``
+```
 cd web
 pnpm install
 ```
