@@ -8,6 +8,15 @@
 
 ## Setup
 
+### Setup envs
+
+```
+cd contracts
+cp .env.example .env
+```
+
+### Installation
+
 ```
 cd agent
 uv sync
@@ -21,4 +30,10 @@ bun install
 ```
 cd web
 pnpm install
+```
+
+### Running
+
+```
+pnpm dev
 ```
