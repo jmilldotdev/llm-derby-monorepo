@@ -35,7 +35,6 @@ class SingleBetWagerWrapper(BaseWagerWrapper):
 
     def step(self, action: str) -> Tuple[bool, Optional[Info]]:
         observation = self.env.get_observation()
-        print(f"Observation in step: {observation}")
         active_player = self.state.current_player_id
         nonactive_player = 1 if active_player == 0 else 0
         pot = 0
