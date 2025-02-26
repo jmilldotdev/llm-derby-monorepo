@@ -2,6 +2,7 @@
 
 ## Prerequisites
 
+- [Rust](https://www.rust-lang.org/tools/install)
 - [Foundry](https://book.getfoundry.sh/getting-started/installation)
 - [Bun](https://bun.sh/docs/installation)
 - [uv](https://github.com/astral-sh/uv)
